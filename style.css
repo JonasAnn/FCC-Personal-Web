@@ -41,7 +41,7 @@ font-family: 'Rubik', sans-serif;
 		background-color: #45567D;
 }
 .nav-links li {
-	padding: 21px 21px;
+	padding: 21.5px 21px;
 	text-align: center;
 }
 .head-text {
@@ -78,7 +78,7 @@ font-family: 'Rubik', sans-serif;
 	margin: auto;
 	height: auto;
 	display: grid;
-	grid-template-rows: repeat(2,31em);
+	grid-template-rows: repeat(2,1fr);
 	grid-gap: 3.1em;
 	grid-template-columns: repeat(3, 1fr);
 	margin-top: 5em;
@@ -89,11 +89,36 @@ font-family: 'Rubik', sans-serif;
 	width: 100%;
 	object-fit: cover;
 }
-.tile-1::after {
-	content: "";
-	background-color: #303841;
-	height: 20px;
-	z-index: 20;
+.project-tile div {
+	 border-bottom-right-radius: 3px;
+	  border-bottom-left-radius: 3px;
+	  box-shadow:1px 0 1px 1px #22222429;
+	}
+.tile-1 {
+	display: grid;
+  grid-template-rows: 2fr;
+  	grid-template-columns: 1fr;
+  	grid-template-areas: 
+  	"header"
+  	"footer";
+}
+.tile-1-img {
+	grid-area: header;
+}
+.tile-1-1 {
+		background-color: #303841;
+		 border-bottom-right-radius: 3px;
+		  border-bottom-left-radius: 3px;
+		  grid-area: footer;
+		  padding: 20px;
+}
+.tile-1-1 a {
+	text-decoration: none;
+	color: #f0f0f0; 
+	font-size: 150%;
+}
+.project-tile-font {
+	color: orange;
 }
 
 
