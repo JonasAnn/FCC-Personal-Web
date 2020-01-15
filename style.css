@@ -82,7 +82,7 @@ font-family: 'Rubik', sans-serif;
 	grid-gap: 3.1em;
 	grid-template-columns: repeat(3, 1fr);
 	margin-top: 5em;
-	margin-bottom: 5em;
+	padding-bottom: 3em;
 }
 .project-tile img{
 	height: 100%;
@@ -118,8 +118,9 @@ font-family: 'Rubik', sans-serif;
 	font-size: 150%;
 }
 .project-tile-font {
-	color: orange;
+	color:  orange;
 }
+
 
 
 
